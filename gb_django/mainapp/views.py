@@ -5,3 +5,6 @@ def hello_world (request):
     return HttpResponse("Hello world!!!")
 def blog(request):
     return  HttpResponse('Helo blog')
+
+def about(request,**kwargs):
+    return  HttpResponse(f'{kwargs}')
